@@ -1,56 +1,32 @@
 .home-module-1 {
-  ul {
-    list-style-type: circle;
-    font-size: 19px;
+  background: #051A3F;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 0;
 
-    li {
-      line-height: 1.5;
-      margin-bottom: 1em;
+  h1 {
+    color: $white;
+    font-size: 34px;
+    margin-bottom: 1em;
+    margin-top: 0;
+    @include raleway();
+    font-weight: 600;
+
+    strong {
+      color: $sherpa-brand-primary;
     }
 
-    li span {
-      font-size: 18px;
-      line-height: 1;
-    }
-  }
-
-  padding-top: 5em;
-  padding-bottom: 5.5em;
-
-  @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-    ul {
-      font-size: 16px;
-      margin-top: 0;
-    }
-
-    h3, h2 {
-      margin-top: 0;
+    span {
+      margin-top: .5em;
+      display: block;
+      font-size: 27px;
+      font-weight: 300;
     }
   }
 
-  @media screen and (min-width: $screen-sm-min) {
-    ul {
-      display: block !important;
-    }
-  }
-
-  @media screen and (max-width: $grid-float-breakpoint-max) {
-    padding-top: 0;
-    padding-bottom: 0;
-
-    h3, h2 {
-      margin: 0 0;
-    }
-
-    ul {
-      line-height: 1.5;
-      margin-bottom: 2em;
-      font-size: 14px;
-
-      li {
-        margin-bottom: 1em;
-      }
-    }
+  h2 {
+    color: $white;
 
   }
 }

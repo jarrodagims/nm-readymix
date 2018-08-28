@@ -16,7 +16,7 @@
     			} else {
     				$edit_link = NULL;
     			}
-   				$title = "<span>" . get_the_title() . $edit_link . "</span>\n";
+   				$title = "<h1>" . get_the_title() . $edit_link . "</h1>\n";
 			}
 			else
 			{
@@ -27,6 +27,7 @@
             echo "<div class=\"sidebar-content\">";
             get_sidebar();
             echo "<div class=\"content page-content\">";
+            echo $title;
             the_content();
             ?>
             <div class="banner banner-bottom">

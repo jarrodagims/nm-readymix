@@ -1,44 +1,37 @@
 .home-module-2 {
-  background: url('../img/construction-crew.jpg') 0 0 no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-  padding-top: 191px;
-  color: $white;
+  color: #000;
+  margin: 3em 0;
 
-  .dark-bg {
-    background: rgba(0,0,0,.6);
-    padding-top: 74px;
-    padding-bottom: 64px;
+  ul {
+    color: #7C7C7C;
+    list-style: none;
 
-    h3 {
-      font-weight: 500;
-      font-size: 26px;
-      line-height: 1.5;
-      margin-top: .25em;
-      margin-bottom: 1em;
-    }
-
-    p {
-      line-height: 1.5;
+    li {
+      margin-bottom: .5em;
     }
   }
 
-  @media screen and (max-width: $screen-sm-max) {
-    background: url('../img/crew.jpg') 0 0 no-repeat;
-    background-size: cover; 
+  h2 {
     text-align: center;
+    position: relative;
+    width: 12em;
+    @include raleway();
+    margin: 0 auto;
+    font-weight: 400;
 
-    h3 {
-      font-size: 1em !important;
+    &::before, &::after {
+      background: $sherpa-brand-primary;
+      content: '';
+      width: 3px;
+      display: block;
+      height: 174px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
-    .dark-bg {
-      padding-top: 2em;
-    }
-
-    p {
-      margin-bottom: 0;
-      line-height: 1.5;
+    &::after {
+      right: 0;
     }
   }
 }

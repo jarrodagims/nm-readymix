@@ -187,17 +187,6 @@ body {
           overflow: hidden;
           text-align: center;
           margin: 0 auto;
-          
-          &::after { 
-            @include svg-badge($white);
-            content: '';
-            width: 147px;
-            height: 147px;
-            position: absolute;
-            right: 0;
-            z-index: 99; 
-            margin-right: 57px;
-          }
            
 
           @media screen and (max-width: $screen-sm-max) {
@@ -213,6 +202,8 @@ body {
 
         h1 {
           margin-bottom: 1em;
+          @include raleway();
+          font-weight: 400;
         }
 
         min-height: 10em;
@@ -246,6 +237,7 @@ body {
 
       h2 {
         margin-bottom: 1em;
+        @include raleway();
       }
       
       ul li, ol li {
@@ -253,13 +245,13 @@ body {
         position: relative;
         line-height: 1.5;
         font-weight: 300;
-      }
+      } 
 
       h2, h3 {
-        color: $sherpa-brand-primary;
         font-size: 16px;
-        font-weight: 300; 
+        font-weight: 300;  
         margin-bottom: 2em;
+      
 
         @media screen and (max-width: $grid-float-breakpoint-max) {
           &.expander {
@@ -270,6 +262,9 @@ body {
 
       .page-content h2 {
         margin-top: 0;
+        @include raleway();
+        font-weight: 400;
+        font-size: 25px;
       }
 
       @media screen and (min-width: $screen-sm-min) {

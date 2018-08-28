@@ -2,3 +2,4 @@
 .DS-Store
 node_modules
 .idea
+*/**/.DS-Store

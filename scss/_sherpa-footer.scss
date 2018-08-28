@@ -1,27 +1,35 @@
 
+.footer-nav {
+  .navbar-sherpa .nav>li>a {
+
+    color: #606060;
+  }
+  .caret {
+    color: $sherpa-brand-primary;
+  }
+}
 
 #footer {
   padding: 3em 0 2em;
   text-align: center;
   background: $white;
 
-  .btn {
-    background: #141081;
-    letter-spacing: 3px;
-    padding: 20px 30px;
   
 
-    @include dropshadow();
+ 
+  .btn {
+    background: $sherpa-brand-primary;
+    letter-spacing: 3px;
+    padding: 20px 30px;
 
     &:hover {
       background: $sherpa-brand-primary;
-    }
+    }  
   }
-
-
+  
   a.arrow {
      font-weight: 500;
-
+ 
       &::after {
         display: block;
         clear: both;
@@ -83,8 +91,6 @@
   @media screen and (max-width: $screen-sm-min) {
     text-align: left;
   }
-
-
 
   @media screen and (max-width: $screen-sm-max) {
 

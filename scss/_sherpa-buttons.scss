@@ -9,14 +9,13 @@
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
   transition: background-color 0.2s ease-in-out;
-
-  &.btn-default {
-    background: #E3E3E5;
-    color: $sherpa-dark-color;
-  }
+  font-weight: 600;
 
 
   &.btn-default, &.btn-primary {
+    background: $sherpa-brand-primary;
+    border-color: $sherpa-brand-primary;
+    
     &:hover {
       background: $sherpa-brand-primary;
       color: $white;
@@ -43,11 +42,11 @@
 
 .btn-read-more {
   &.btn-border {
-    background: rgba(41,41,44,0.63);
+    background: $sherpa-brand-primary;
+    border-color: $sherpa-brand-primary;
     color: $white;
 
     &:hover {
-      color: $sherpa-dark-color;
       background: $sherpa-brand-primary;
     } 
   }

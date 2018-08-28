@@ -1,45 +1,90 @@
 .home-module-8 {
-  padding: 70px 0;
+  overflow: hidden;
 
-  .facebook-icon {
-    margin-bottom: 1em;
+  .logo-middle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
-  .btn {
-    margin-top: 1em;
-    font-size: 10px;
+  .col-md-6:last-child {
+    text-align: right;
   }
 
-  p {
-    max-width: 60%;
+  .logo {
+    &::before {
+      background: #F2F2F2;
+      content: '';
+      width: 200vw;
+      height: 50%;
+      position: absolute;
+      left: -50vw;
+      z-index: -1;
+    }
   }
 
-  @media screen and (max-width: $screen-sm-max) {
-      text-align: center;
-      padding: 2.5em 0;
-  
-      img {
-        max-width: 100%;
-        margin: 0 auto;
-      }
-
-      p {
-        max-width: 100%;
-        line-height: 1.5;
-        margin-bottom: 1em;
-      }
-
-      .facebook-icon {
-        width: 40px;
-        height: 40px;
-        margin-top: 1.5em;
-      }
-
-      .btn {
-        padding: 14px 30px;
-        font-size: 9px;
-      }
-
+  .brand {
+    color: $sherpa-brand-primary;
   }
 
+  .logo-row {
+    text-align: center;
+  }
+
+  .location-map {
+    text-align: center;
+    background-position: center;
+
+    img {
+      margin: 42px auto;
+    }
+
+    &.map-roswell {
+      background-image: url('../img/roswell-map.png');
+    }
+
+    &.map-lea {
+      background-image: url('../img/lea-county-map.png');
+    }
+  }
+
+  p.text-center {
+    margin: 1em 0;
+  }
+
+  .location-bottom {
+    text-align: left;
+    background: $sherpa-brand-primary;
+    color: $white;
+    padding: 16px 30px;
+
+    .icon-chevron {
+      @include svg-chevron(fff);
+      content: '';
+      height: 10px;
+      width: 8px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      margin-left: 10px;
+    }
+
+    .icon-map {
+      @include svg-map(fff);
+      background-repeat: no-repeat;
+      background-position: center center;
+      content: '';
+      height: 26px;
+      width: 17px;
+      display: inline-block;
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

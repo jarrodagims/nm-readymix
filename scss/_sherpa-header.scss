@@ -9,7 +9,7 @@
     padding-bottom: 8px;
     display: flex !important;
     justify-content: center;
-
+ 
     .navbar-brand img {
       height: 55px;
       width: auto;
@@ -31,16 +31,22 @@
 
   .v-align {
     padding: 0 0 0;
+    display: flex;
+    justify-content: space-between;
   }
 
   .menu-primary-container {
     margin: 0 0 0;
-  }
+  }  
 
   .navbar-sherpa .nav > li > a {
-    color: #606060;
-
+    color: $white;
+ 
     &:hover {
+      color: $sherpa-brand-primary;
+    }
+
+    .caret {
       color: $sherpa-brand-primary;
     }
   }
@@ -49,6 +55,8 @@
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     min-height: 0;
+    display: flex;
+    align-items: center;
   }
 }
 

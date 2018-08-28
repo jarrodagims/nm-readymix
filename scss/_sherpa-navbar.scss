@@ -146,13 +146,7 @@
 }
 
 .top-header {
-  background: $sherpa-dark-color;
-
-  @media screen and (min-width: $grid-float-breakpoint-max) {
-    padding-top: 18px;
-
-    
-  }
+  background: rgba(0, 0, 0, 0.9);
 }
 
 @media screen and (max-width: $screen-sm-max) {
@@ -169,7 +163,7 @@
 }
 
 .navbar-right {
-  margin: 29px 0 10px;
+  margin: 13px 0;
 
   li.menu-item {
     line-height: 16px;
@@ -308,15 +302,15 @@
   }
 
   .navbar-sherpa {
-    display: flex;
+    display: flex; 
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
 
     .dropdown-menu {
-      //display: none !important;
       background: transparent;
-      width: 100%;
+      display: block !important; 
+      width: 100%; 
       position: relative;
       padding-bottom: 20px;
 
@@ -328,7 +322,7 @@
       overflow: hidden;
     }
 
-    .navbar-brand {
+    .navbar-brand { 
       line-height: 1;
 
       img {
@@ -701,7 +695,7 @@
 
  &::after {
     content: '';
-    background: #606060 !important;
+    background: #fff !important;
     height: 15px;
     width: 1px;
     display: block;
