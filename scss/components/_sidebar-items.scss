@@ -1,0 +1,52 @@
+.h2 {
+  text-align: center;
+  position: relative;
+  width: 12em;
+  @include raleway();
+  margin: 0 auto;
+  font-weight: 400;
+
+  &::before, &::after {
+    background: $sherpa-brand-primary;
+    content: '';
+    width: 3px;
+    display: block;
+    height: 174px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    right: 0;
+  }
+}
+
+#sidebar .grid {
+
+  .column {
+    color: $white;
+    display: block;
+  }
+}
+
+#sidebar .h2 {
+  font-size: 18px;
+
+  &:before {
+    left: 0;
+  }
+
+  &:after {
+    right: 0;
+  }
+
+  &:before, &:after {
+    height: 90px;
+  }
+
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

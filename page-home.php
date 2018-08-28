@@ -43,7 +43,7 @@
     <section class="home-module-2">
         <div class="container">
             <div class="row flex-row">
-                <div class="col-md-6 flex-col"><h2>Concrete, Sand <br/>& Gravel Supplier</h2></div>
+                <div class="col-md-6 flex-col"><h2 class="h2">Concrete, Sand <br/>& Gravel Supplier</h2></div>
                 <div class="col-md-6">
                     <h3>
                         <ul>

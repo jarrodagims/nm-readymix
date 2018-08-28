@@ -11,27 +11,27 @@
     }
   }
 
-  h2 {
-    text-align: center;
-    position: relative;
-    width: 12em;
-    @include raleway();
-    margin: 0 auto;
-    font-weight: 400;
-
-    &::before, &::after {
-      background: $sherpa-brand-primary;
-      content: '';
-      width: 3px;
-      display: block;
-      height: 174px;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-
-    &::after {
-      right: 0;
-    }
-  }
+  //h2 {
+  //  text-align: center;
+  //  position: relative;
+  //  width: 12em;
+  //  @include raleway();
+  //  margin: 0 auto;
+  //  font-weight: 400;
+  //
+  //  &::before, &::after {
+  //    background: $sherpa-brand-primary;
+  //    content: '';
+  //    width: 3px;
+  //    display: block;
+  //    height: 174px;
+  //    position: absolute;
+  //    top: 50%;
+  //    transform: translateY(-50%);
+  //  }
+  //
+  //  &::after {
+  //    right: 0;
+  //  }
+  //}
 }

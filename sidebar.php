@@ -17,67 +17,42 @@
             <div class="flex-col bg">
                 <div class="container-half">
                     <div class="header">
-                        <div class="h2">
-                            <span class="title">A TRADITION OF</span>
-                            <span class="subtitle">BUILDING & <br />CONSTRUCTION</span>
-                        </div>
+                            <div class="title">Concrete Contractor</div>
+                            <div class="sub-title">Serving <span>New Mexico’s Lea County</span><br /> and <span>Roswell</span></div>
+                            <a href="<?= SITEURL ?>/contact-us/">
+                                <button class="btn btn-primary">Request a Quote</button>
+                            </a>
                     </div>
 
-                    <section class="icon-row">
-                        <ul class="flex-row">
-                            <li class="flex-col">
-                                <a href="<?= SITEURL; ?>/commercial-site-development">
-                                    <?php get_template_part('template-parts/icon', 'spade'); ?>
-                                    Construction &
-                                    <br/>Site Development
+                    <div class="home-module-2">
+                       <div class="h2">Concrete, Sand <br/>& Gravel Supplier</div>
+                    </div>
+                            <div class="grid">
+                                <a class="grid-2 column column-sand" href="<?= SITEURL ?>/contact-us/">
+                                    Sand
                                 </a>
-                            </li>
-                            <li class="flex-col">
-                                <a href="<?= SITEURL; ?>/construction-management/">
-                                    <?php get_template_part('template-parts/icon', 'cone'); ?>
-                                    Construction
-                                    <br/>Management</a>
-                            </li>
-                            <li class="flex-col">
-                                <a href="<?= SITEURL; ?>/paving/">
-                                    <?php get_template_part('template-parts/icon', 'paving'); ?>
-                                    Paving <br/>& Asphalt</a>
-                            </li>
-                            <li class="flex-col">
-                                <a href="<?= SITEURL; ?>/government-contracting/">
-                                    <?php get_template_part('template-parts/icon', 'gov'); ?>
-                                    Government<br/>
-                                    Contracting</a></li>
-                            <li class="flex-col">
-                                <a href="<?= SITEURL; ?>/road-and-highway-construction/">
-                                    <?php get_template_part('template-parts/icon', 'highway'); ?>
-                                    Highway &<br/>
-                                    Road Construction</a>
-                            </li>
-                            <li class="flex-col">
-                                <a href="<?= SITEURL; ?>/utility-installation-construction/">
-                                    <?php get_template_part('template-parts/icon', 'utility'); ?>
-                                    Utility<br/>
-                                    Installation</a>
-                            </li>
-                            <li class="flex-col">
-                                <a href="<?= SITEURL; ?>/services/">
-                                    <?php get_template_part('template-parts/icon', 'landscaping'); ?>
-                                    Landscaping</a>
-                            </li>
+                                <a class="grid-2 column column-gravel" href="<?= SITEURL ?>/contact-us/">
+                                    Gravel
+                                </a>
+                                <a class="grid-3 column column-concrete" href="<?= SITEURL ?>/contact-us/">
+                                    Mixed Concrete
+                                </a>
+                                <a class="grid-3 column column-landscape" href="<?= SITEURL ?>/contact-us/">
+                                    Landscape Rock
+                                </a>
+                                <a class="grid-3 column column-crushed" href="<?= SITEURL ?>/contact-us/">
+                                    Crushed Aggregate
+                                </a>
+                                <a class="column column-cement" href="<?= SITEURL ?>/contact-us/">
+                                    Cement
+                                </a>
+                            </div>
 
-                            <li class="flex-col contact-button">
-                                <a href="<?= SITEURL; ?>/contact-us/">
-                                    Contact Us</a>
-                            </li>
-                        </ul>
-                    </section>
-
-                    <div class="contact-us">
-
-                        <?php get_template_part('template-parts/testimonial-slider'); ?>
-
-                    </div>
+                    <div class="sidebar-bottom"><img src="<?= IMGURL ?>construction.svg" alt="Construction Supplies" height="115"/>
+                    <div class="heading">All The Construction Supplies You Need, <strong>DELIVERED TO <br />THE JOB SITE</strong></div>
+                    <a href="<?= SITEURL ?>/contact-us/">
+                        <button class="btn btn-primary">CONTACT US TODAY</button>
+                    </a></div>
                 </div>
             </div>
         </section>

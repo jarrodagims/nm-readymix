@@ -7,41 +7,6 @@
     font-size: 39px;
     color: #8F9699;
   }
-
-  
-  @media screen and (min-width: $screen-md-min) {
-    .page-content, #sidebar {
-      padding-top: 10px;
-    }
-  }
-
-  @media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-    .img-responsive {
-      max-width: 40%;
-      height: auto; 
-
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-    }
-  }
-
-  @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-    .flex-row {
-      flex-direction: column;
-    }
-
-    .img-responsive {
-      max-width: 30%;
-      height: auto; 
-
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-    }
-  }
 }
 
 body #main .container article #sidebar {
@@ -50,30 +15,122 @@ body #main .container article #sidebar {
   margin-left: 4em;
   text-align: center;
 
-  h3 {
-    font-size: 26px;
-    line-height: 1.5;
-    font-family: 'Roboto', sans-serif;
-    color: $white;
-  }
-
-  h4 {
-    font-size: 19px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    color: $white;
-  }
-
-  @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-    width: 300px;
-  } 
-
 }
 
 body #main .container article #sidebar {
 
 //   z-index: 9999;
   position: relative;
+  text-align: center;
+
+  .sidebar-bottom {
+    text-align: center;
+    padding: 40px;
+
+    img {
+      margin: 0 auto;
+      width: 120px;
+      height: 73px;
+    }
+
+    .heading {
+      font-size: 18px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 1em;
+      padding-bottom: 1em;
+
+      strong {
+        color: $sherpa-brand-primary;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 107px 107px;
+    grid-gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: stretch;
+    justify-items: stretch;
+    align-content: center;
+    justify-content: center;
+    padding-right: 25px;
+    padding-left: 25px;
+
+
+
+    a {
+      background: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      z-index: 2;
+      padding: 1em;
+      color: $white;
+      background-position: center center;
+      position: relative;
+
+      &:before {
+        background: rgba(0,0,0,0.5);
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+      }
+
+
+      &.column-sand {
+        background-image: url('../img/sand.jpg');
+      }
+
+      &.column-gravel {
+        background-image: url('../img/gravel.jpg');
+      }
+
+      &.column-landscape {
+        background-image: url('../img/landscape.jpg');
+      }
+
+      &.column-landscape {
+        background-image: url('../img/landscape.jpg');
+      }
+
+      &.column-concrete {
+        background-image: url('../img/mixed-concrete.jpg');
+      }
+
+      &.column-crushed {
+        background-image: url('../img/crushed-aggregate.jpg');
+      }
+
+      &.column-cement {
+        background-image: url('../img/cement.jpg');
+        width: 100%;
+        margin-left: 0;
+      }
+
+
+      &:hover {
+        text-decoration: none;
+        background: $sherpa-brand-primary;
+        background-image: none;
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .home-module-2 {
+    width: 100%;
+  }
 
   .bottom-sidebar {
     background: #F2F2F2;
@@ -90,57 +147,14 @@ body #main .container article #sidebar {
     text-align: center;
     flex-direction: column;
 
-
     .header {
       background: $sherpa-secondary-color;
       padding: 2em 0;
       width: 100%;
 
-
       h2 {
         margin-bottom: 0;
         color: $white;
-      }
-    }
-
-    .image {
-      background: url('../img/bg-home-2-mobile.jpg') right center no-repeat;
-      background-size: cover;
-      height: 284px;
-      width: 100%;
-    }
-
-    .contact-us {
-      flex-direction: column;
-      width: 100%;
-      background: #F2F2F2;
-      padding: 42px;
-      z-index: 99;
-      
-
-      .title {
-        color: $sherpa-brand-primary;
-        font-size: 24px;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 400;
-        letter-spacing: 2px;
-      }
-
-      .facebook-icon {
-        width: 42px;
-        height: 42px;
-        margin: 2em 0 .75em;
-      }
-
-      .btn {
-        border: 0;
-        font-size: 9px;
-        margin-top: 0;
-        padding: 2em 4.5em;
-      }
-
-      p {
-        line-height: 1.5;
       }
     }
 
@@ -153,23 +167,26 @@ body #main .container article #sidebar {
       width: 100%;
     }
 
-
-    .h2 {
+    .header {
       font-family: 'Raleway', sans-serif;
       color: $white;
       margin: 0 0;
 
       .title {
         font-size: 18px;
-        letter-spacing: 2px;
-        font-weight: 300;
+        font-weight: 400;
       }
 
-      .subtitle {
-        font-size: 22px;
+      .sub-title {
+        font-size: 15px;
         display: block;
-        font-weight: 600;
-        letter-spacing: 4px;
+        font-weight: 400;
+        margin-top: .5em;
+        margin-bottom: 1em;
+
+        span {
+          color: $sherpa-brand-primary;
+        }
       }
     }
   }
@@ -179,25 +196,6 @@ body #main .container article #sidebar {
     font-size: 15px;
     text-align: center;
     margin-bottom: 2em;
-  }
-
-  .bottom-sidebar {
-    
-    .small {
-      font-size: 16px;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 600;
-      letter-spacing: 1px;
-      margin-bottom: 0;
-      line-height: 1;
-    }
-
-    .large {
-      font-size: 40px;
-      font-weight: 800;
-      line-height: 1.25;
-      font-family: 'Montserrat', sans-serif;
-    }
   }
 }
 
