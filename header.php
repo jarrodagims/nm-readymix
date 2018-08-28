@@ -43,26 +43,6 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body <?php body_class(); ?>>
-<script>
-    window.fbAsyncInit = function() {
-        FB.init({
-            appId            : '468686503635858',
-            autoLogAppEvents : true,
-            xfbml            : true,
-            version          : 'v3.1'
-        });
-    };
-
-    (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-
-
-</script>
 <div id="fb-root"></div>
 
 <?php if (is_front_page()) : ?>
@@ -77,6 +57,12 @@
         <div class="container">
             <div class="row ">
                 <div class="v-align">
+                <?php if (!is_front_page()) : ?><a class="navbar-brand" href='<?php echo get_site_url(); ?>'><img
+                src="<?= IMGURL; ?>logo.png"
+                alt="<?php echo get_bloginfo(
+                    'description'
+                ); ?>" class="logo"/><img src="<?= IMGURL ?>logo.svg" alt="NM Ready Mix" />
+                    </a><?php endif; ?>
                 <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="menu-item directions"><a

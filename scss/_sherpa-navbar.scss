@@ -149,6 +149,25 @@
   background: rgba(0, 0, 0, 0.9);
 }
 
+.page-template-default, .blog, .error-404, .post-template-default {
+
+   .top-header {
+     background: #F2F2F2;
+     height: 130px;
+     align-items: flex-end;
+     display: flex;
+     padding-bottom: 30px;
+   }
+
+   .navbar-sherpa li.menu-item a {
+     color: #606060;
+   }
+
+   .navbar-sherpa li.menu-item .dropdown-menu li.menu-item a {
+     color: $white; 
+   }
+}
+
 @media screen and (max-width: $screen-sm-max) {
 
   .sub-header .navbar-brand {
@@ -261,9 +280,6 @@
         padding: 0 0;
       }
     }
-
-
-    
 
     
 
@@ -402,11 +418,13 @@
     margin-left: auto;
   }
 
-  .navbar-brand {
+  .page-template-page-home {
+    .navbar-brand {
     position: absolute;
     z-index: 99;
     left: 0;
     top: -36px;
+    }
   }
 }
 
@@ -785,3 +803,4 @@
     display: block;
   }
 }
+

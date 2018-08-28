@@ -119,6 +119,12 @@
     }
   }
 
+  .navbar-right li.menu-item.directions {
+
+   &::after {
+      background: #606060 !important;
+   }
+  }
 }
 
 #header {
@@ -179,4 +185,32 @@
 
 .btn-license {
   border-radius: 10px;
+}
+
+
+.page-template-default, .blog, .error-404, .post-template-default { 
+  
+
+  .navbar-brand {
+    
+    position: absolute;
+    display: flex;
+    width: 100%;
+
+    
+    .logo {
+      width: 190px;
+      height: 190px;
+      margin-top: -50px;
+      margin-right: 1em;
+    }
+  }
+
+  @media screen and (min-width: $screen-sm-min) {
+    .navbar-sherpa {
+      margin-left: auto;
+      margin-right: 1em;
+    }
+  }
+
 }
