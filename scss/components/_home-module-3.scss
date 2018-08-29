@@ -4,81 +4,6 @@
     margin-bottom: 10px;
   }
 
-  .grid {
-
-
-    .column {
-      text-align: center;
-      background-size: cover;
-      margin-left: 10px;
-      height: 214px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      &:hover {
-        text-decoration: none;
-
-        .btn {
-          background: $sherpa-brand-primary;
-        }
-      }
-
-      &:first-child {
-        margin-left: 0;
-      }
-
-      &.column-sand {
-        background-image: url('../img/sand.jpg');
-      }
-
-      &.column-gravel {
-        background-image: url('../img/gravel.jpg');
-      }
-
-      &.column-landscape {
-        background-image: url('../img/landscape.jpg');
-      }
-
-      &.column-landscape {
-        background-image: url('../img/landscape.jpg');
-      }
-
-      &.column-concrete {
-        background-image: url('../img/mixed-concrete.jpg');
-      }
-
-      &.column-crushed {
-        background-image: url('../img/crushed-aggregate.jpg');
-      }
-
-      &.column-cement {
-        background-image: url('../img/cement.jpg');
-        width: 100%;
-        margin-left: 0;
-      }
-
-      background-size: cover;
-      background-position: center 0;
-    }
-
-    .grid-3 {
-      flex: 1;
-    }
-
-    .grid-2 {
-      width: 50%;
-    }
-
-    .grid-1 {
-      width: 100%;
-    } 
-
-    .btn {
-      background: rgba(224, 145, 5, 0.9);
-      border-color: rgba(224, 145, 5, 0.9);
-    }
-  }
 
   @media screen and (max-width: $grid-float-breakpoint-max) {
 //    .flex-row {
@@ -123,6 +48,87 @@
 
     .grid {
       @include grid();
+    }
+  }
+
+  @media screen and (min-width: $screen-sm-min) {
+    .grid-2 {
+      display: none;
+    }
+
+    .grid {
+
+      .column {
+        text-align: center;
+        background-size: cover;
+        margin-left: 10px;
+        height: 214px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          text-decoration: none;
+
+          .btn {
+            background: $sherpa-brand-primary;
+          }
+        }
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &.column-sand {
+          background-image: url('../img/sand.jpg');
+        }
+
+        &.column-gravel {
+          background-image: url('../img/gravel.jpg');
+        }
+
+        &.column-landscape {
+          background-image: url('../img/landscape.jpg');
+        }
+
+        &.column-landscape {
+          background-image: url('../img/landscape.jpg');
+        }
+
+        &.column-concrete {
+          background-image: url('../img/mixed-concrete.jpg');
+        }
+
+        &.column-crushed {
+          background-image: url('../img/crushed-aggregate.jpg');
+        }
+
+        &.column-cement {
+          background-image: url('../img/cement.jpg');
+          width: 100%;
+          margin-left: 0;
+        }
+
+        background-size: cover;
+        background-position: center 0;
+      }
+
+      .grid-3 {
+        flex: 1;
+      }
+
+      .grid-2 {
+        width: 50%;
+      }
+
+      .grid-1 {
+        width: 100%;
+      }
+
+      .btn {
+        background: rgba(224, 145, 5, 0.9);
+        border-color: rgba(224, 145, 5, 0.9);
+      }
     }
   }
 }

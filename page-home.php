@@ -92,7 +92,7 @@
                         </a>
                     </div>
 
-                    <div class="grid visible-xs">
+                    <div class="grid grid-2">
                         <a class="grid-2 column column-sand" href="<?= SITEURL ?>/contact-us/">
                             Sand
                         </a>
