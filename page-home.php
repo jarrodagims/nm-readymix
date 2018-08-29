@@ -43,11 +43,13 @@
     <section class="home-module-2">
         <div class="container">
             <div class="row flex-row">
+
                 <div class="col-md-6 flex-col"><h2 class="h2">Concrete, Sand <br/>& Gravel Supplier</h2></div>
+                <div class="visible-xs expander" data-target="#expand"><span>New Mexico’s best concrete supplier</span></div>
                 <div class="col-md-6">
                     <h3>
-                        <ul>
-                            <li>New Mexico’s best concrete supplier</li>
+                        <ul class="expand" id="expand">
+                            <li class="hidden-xs">New Mexico’s best concrete supplier</li>
                             <li>Top rated service in Lea County</li>
                             <li>Highly reviewed residential and commercial concrete</li>
                             <li>A local business dedicated to your needs</li>
@@ -65,7 +67,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <div class="grid">
+                    <div class="grid hidden-xs">
                         <div class="flex-row">
                             <a class="grid-2 column column-sand" href="<?= SITEURL ?>/contact-us/">
                                 <button class="btn btn-primary">Sand</button>
@@ -87,6 +89,27 @@
                         </div>
                         <a class="column column-cement" href="<?= SITEURL ?>/contact-us/">
                             <button class="btn btn-primary">Cement</button>
+                        </a>
+                    </div>
+
+                    <div class="grid visible-xs">
+                        <a class="grid-2 column column-sand" href="<?= SITEURL ?>/contact-us/">
+                            Sand
+                        </a>
+                        <a class="grid-2 column column-gravel" href="<?= SITEURL ?>/contact-us/">
+                            Gravel
+                        </a>
+                        <a class="grid-3 column column-concrete" href="<?= SITEURL ?>/contact-us/">
+                            Mixed Concrete
+                        </a>
+                        <a class="grid-3 column column-landscape" href="<?= SITEURL ?>/landscaping-supplies/">
+                            Landscape Rock
+                        </a>
+                        <a class="grid-3 column column-crushed" href="<?= SITEURL ?>/contact-us/">
+                            Crushed Aggregate
+                        </a>
+                        <a class="column column-cement" href="<?= SITEURL ?>/contact-us/">
+                            Cement
                         </a>
                     </div>
                 </div>
@@ -154,7 +177,7 @@
 
     <section class="home-module-7">
         <div class="container-fluid">
-            <div class="row flex-row">
+            <div class="row flex-row flex-order">
 
                 <div class="col-xs-12 col-sm-6  flex-col bg-gray left">
                     <div class="container-half"><h2>NM Ready Mix is the Right Supply Team</h2>

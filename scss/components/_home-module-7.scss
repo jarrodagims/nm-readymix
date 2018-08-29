@@ -152,11 +152,27 @@
 
   @media screen and (max-width: $grid-float-breakpoint-max) {
 
+    .col-md-6 {
+      width: 100%;
+      height: 280px;
+    }
+
+    .flex-order {
+      flex-direction: column-reverse;
+    }
+
+    .container-half {
+      text-align: center;
+      justify-content: center !important;
+    }
+
     h2 {
       font-size: 20px;
       line-height: 1.5em;
       padding-left: 2em;
       padding-right: 2em;
+      text-align: center;
+      margin: 1em auto;
     }
 
     .btn {
@@ -167,6 +183,10 @@
     .bg-gray {
       text-align: center;
       padding-bottom: 20px;
+
+      .container-half {
+        justify-content: center;
+      }
 
       .flex-row {
         flex-direction: column;

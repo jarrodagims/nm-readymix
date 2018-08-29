@@ -34,4 +34,42 @@
   //    right: 0;
   //  }
   //}
+
+  @media screen and (max-width: $grid-float-breakpoint-max) {
+    margin-bottom: 0;
+
+    .expander {
+      background: #272827;
+      color: $white;
+      padding: 40px 25px;
+      font-size: 17px;
+      margin: 2em 0 0;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &.expanded {
+        span::after {
+          transform: translateY(-50%) rotate(90deg);
+        }
+      }
+
+      span {
+        display: block;
+        position: relative;
+
+        &::after {
+          @include chevron(E09105);
+          background-repeat: no-repeat;
+          content: '';
+          display: block;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 0;
+          width: 11px;
+          height: 14px;
+        }
+      }
+    }
+  }
 }

@@ -39,6 +39,15 @@
                     <strong>575.392.1317</strong></p>
             </div>
         </div>
+        <div class="row visible-xs text-center">
+            <div class="col-xs-12">
+                <?php $sm = new SocialMedia(array('facebook', 'twitter'));
+                $sm->setSize('sm');
+                $sm->showNetworkButtons();
+                $sm->setColorType('singleColor');
+                ?>
+            </div>
+        </div>
     </div>
 </section>
 <section class="footer-nav hidden-xs hidden-sm">

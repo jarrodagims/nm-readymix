@@ -9,7 +9,7 @@
   &::before, &::after {
     background: $sherpa-brand-primary;
     content: '';
-    width: 3px;
+    width: 2px;
     display: block;
     height: 174px;
     position: absolute;
@@ -19,6 +19,12 @@
 
   &::after {
     right: 0;
+  }
+
+  @media screen and (max-width: $grid-float-breakpoint-max) {
+    &::before, &::after {
+      height: 3em;
+    }
   }
 }
 
@@ -49,4 +55,10 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+body #main .container article #sidebar  {
+  .grid {
+    @include grid();
+  }
 }

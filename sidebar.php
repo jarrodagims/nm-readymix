@@ -37,7 +37,7 @@
                                 <a class="grid-3 column column-concrete" href="<?= SITEURL ?>/contact-us/">
                                     Mixed Concrete
                                 </a>
-                                <a class="grid-3 column column-landscape" href="<?= SITEURL ?>/contact-us/">
+                                <a class="grid-3 column column-landscape" href="<?= SITEURL ?>/landscaping-supplies/">
                                     Landscape Rock
                                 </a>
                                 <a class="grid-3 column column-crushed" href="<?= SITEURL ?>/contact-us/">
