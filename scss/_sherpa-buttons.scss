@@ -37,6 +37,11 @@
   &.btn-register {
     padding: 24px 31px;
   }
+
+  @media screen and (max-width: $grid-float-breakpoint-max) {
+    padding: 10px 15px;
+    font-size: 10px;
+  }
 }
  
 

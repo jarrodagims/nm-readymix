@@ -44,7 +44,7 @@
         <div class="container">
             <div class="row flex-row">
 
-                <div class="col-md-6 flex-col"><h2 class="h2">Concrete, Sand <br/>& Gravel Supplier</h2></div>
+                <div class="col-md-6 flex-col"><h2 class="h2">Concrete, Sand & <br/>Gravel Supplier</h2></div>
                 <div class="visible-xs expander" data-target="#expand"><span>New Mexico’s best concrete supplier</span></div>
                 <div class="col-md-6">
                     <h3>
@@ -116,14 +116,16 @@
     </section>
 
     <section class="home-module-4">
+        <img class="visible-xs" src="<?= IMGURL ?>nm-ready-mix.jpg" alt="NM Ready Mix" />
         <div class="container">
-            <div class="col-md-6"></div>
-            <div class="col-md-6">
-                <h2><strong>NM Ready Mix</strong> provides high-quality concrete, sand, and gravel for projects of any size or type.</h2>
+            <div class="col-md-6 hidden-xs">
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="extra-padding"><h2><strong>NM Ready Mix</strong> provides high-quality concrete, sand, and gravel for projects of any size or type.</h2>
                 <p>In fact, we are the highest quality provider on the market! Our commitment to quality separates NM
                     Ready Mix from the competition.
                     Whether you’re working on a small backyard job or a large-scale industrial project,
-                    we can provide the best materials to get the job done right the first time.</p>
+                    we can provide the best materials to get the job done right the first time.</p></div>
             </div>
         </div>
     </section>
@@ -131,13 +133,13 @@
     <section class="home-module-5">
         <div class="container">
             <div class="row">
-                <h2>In order for any job to be as effective as possible, not only is it necessary for the materials to be
+                <div class="extra-padding"><h2>In order for any job to be as effective as possible, not only is it necessary for the materials to be
                     of the highest quality, but they need to be ready to go.</h2>
                 <p>For this reason, NM Ready Mix offers full ready-mixed concrete so you won’t have to mix any bags.
                     The precise mixture of our ready-mixed concrete yields just right overtime and will be ready for use
                     whenever you need it.
                     If you’re in Lea County or Roswell, NM Ready Mix can help. For commercial and residential
-                    ready-mixed concrete, sand, and crushed aggregate, choose NM Ready Mix. </p>
+                    ready-mixed concrete, sand, and crushed aggregate, choose NM Ready Mix. </p></div>
             </div>
         </div>
     </section>
@@ -146,17 +148,17 @@
         <div class="container">
             <div class="row flex-row">
                 <div class="col-md-6 flex-col">
-                    <img src="<?= IMGURL ?>construction.svg" alt="Construction Supplies" height="115"/>
-                    <h2>All The Construction Supplies You Need, <strong>DELIVERED TO <br />THE JOB SITE</strong></h2>
+                    <div class="extra-padding"><img src="<?= IMGURL ?>construction.svg" alt="Construction Supplies" height="115"/>
+                    <h2>All The Construction Supplies You Need, <strong>DELIVERED TO THE JOB SITE</strong></h2>
                     <a href="<?= SITEURL ?>/contact-us/">
                         <button class="btn btn-primary">CONTACT US TODAY</button>
-                    </a>
+                    </a></div>
                 </div>
                 <div class="col-md-6">
-                    <p class="blurb"><strong>The NM Ready Mix</strong> team devoted to making your next project as stress-free as
+                    <div class="extra-padding"><p class="blurb"><strong>The NM Ready Mix</strong> team devoted to making your next project as stress-free as
                         possible.</p>
 
-                    <p class="blurb">No matter where you are, we can easily deliver and pour your product whenever you
+                    <p class="blurb blurb-smaller">No matter where you are, we can easily deliver and pour your product whenever you
                         need it.
                         At NM Ready Mix, we have a fleet of 20 trucks that could easily meet
                         any demand and delivery schedule. Give us a call today to find out if your job site is in our
@@ -169,7 +171,7 @@
                         There’s no need to
                         worry about where to buy concrete, how to transport it, or how to pour it. We will take care of
                         it all so you can focus on what really matters!
-                    </p>
+                    </p></div>
                 </div>
             </div>
         </div>
@@ -182,12 +184,11 @@
                 <div class="col-xs-12 col-sm-6  flex-col bg-gray left">
                     <div class="container-half"><h2>NM Ready Mix is the Right Supply Team</h2>
                     <p class="blurb">
-                        NM Ready Mix understands the need of the client. As such, we’re devoted to providing
+                        NM Ready Mix understands the needs of the client. As such, we’re devoted to providing
                         all-encompassing service.
                     </p>
 
-                    <p>NM Ready Mix understands the needs of the client. As such, we’re devoted to providing
-                        all-encompassing service. No matter what you need, when or where you need it, our team will get it
+                    <p>No matter what you need, when or where you need it, our team will get it
                         to you. Since we work with do-it-yourselfers and professional construction crews alike, our team is
                         able to answer any questions or concerns. Our overall goal is for your construction project to be a
                         success. Since we provide materials of the highest quality along with the best delivery, you will be
@@ -196,7 +197,7 @@
                 </div>
 
                 <div class="col-xs-12 col-sm-6 col-md-6 flex-col bg-supply">
-
+                    <img src="<?=IMGURL ?>supply-sm.jpg" alt="" class="visible-xs" />
                 </div>
             </div>
         </div>

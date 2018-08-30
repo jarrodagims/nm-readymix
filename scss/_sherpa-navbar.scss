@@ -57,7 +57,7 @@
       background-color: $sherpa-navbar-default-toggle-hover-bg;
     }
     .icon-bar {
-      background-color: $white;
+      background-color: #272827;
     }
   }
 
@@ -344,7 +344,6 @@
       position: relative;
       padding-bottom: 20px;
       box-shadow: none;
- 
     }
 
     .navbar-collapse.in,
@@ -374,7 +373,7 @@
 
 
       .icon-bar {
-        height: 3px;
+        height: 2px;
       }
     }
   }

@@ -1,6 +1,6 @@
 .home-module-2 {
   color: #000;
-  margin: 3em 0;
+  margin: 2.25em 0;
 
   ul {
     color: #7C7C7C;
@@ -35,15 +35,36 @@
   //  }
   //}
 
+  @media screen and (min-width: $screen-sm-min) {
+    ul {
+      display: block !important;
+    }
+  }
+
+  @media screen and (min-width: $screen-md-min) {
+    ul {
+      padding-left: 0;
+    }
+  }
+
   @media screen and (max-width: $grid-float-breakpoint-max) {
     margin-bottom: 0;
+    
+    .expand {
+      font-size: 15px;
+      margin-bottom: 2em;
+      
+      li {
+        margin-bottom: 1em;
+      } 
+    }
 
     .expander {
       background: #272827;
       color: $white;
       padding: 40px 25px;
       font-size: 17px;
-      margin: 2em 0 0;
+      margin: 2.5em 0 0;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
 

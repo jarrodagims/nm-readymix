@@ -8,4 +8,28 @@
   h2 {
     @include raleway();
   }
+
+  @media screen and (max-width: $grid-float-breakpoint-max) {
+    margin-top: 1.5em;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+    background: none;
+    color: #606060;
+    img {
+      margin-bottom: 1em;
+    }
+
+    h2 {
+      font-size: 18px;
+      line-height: 1.5;
+      strong {
+        display: block;
+      }
+    }
+
+    p {
+      line-height: 1.5;
+    }
+  }
 }

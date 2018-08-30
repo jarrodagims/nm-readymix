@@ -36,8 +36,6 @@
 	justify-items: stretch;
 	align-content: center;
 	justify-content: center;
-	padding-right: 25px;
-	padding-left: 25px;
 
 
 
@@ -52,6 +50,10 @@
 		color: $white;
 		background-position: center center;
 		position: relative;
+		font-size: 10px;
+		text-transform: uppercase;
+		font-weight: 900;
+		font-family: 'Montserrat', sans-serif;
 
 		&:hover {
 			text-decoration: none;
