@@ -38,6 +38,29 @@
     font-weight: 600;
   }
 
+  @media screen and (min-width: $screen-md-min) {
+    h2 {
+      line-height: 1.5;
+
+      span {
+        display: block;
+      }
+
+      strong {
+        font-size: 34px;
+      }
+    }
+
+    p.blurb {
+      font-size: 27px;
+
+      &.blurb-smaller {
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
+
   @media screen and (max-width: $grid-float-breakpoint-max) {
     padding: 2em 0;
     text-align: center;

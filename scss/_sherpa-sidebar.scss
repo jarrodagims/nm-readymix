@@ -11,7 +11,7 @@
 
 body #main .container article #sidebar {
   float: right;
-  width: 411px;
+  width: 380px;
   margin-left: 4em;
   text-align: center;
 
@@ -26,7 +26,7 @@ body #main .container article #sidebar {
 
   .sidebar-bottom {
     text-align: center;
-    padding: 40px;
+    padding: 60px;
 
     img {
       margin: 0 auto;
@@ -36,10 +36,9 @@ body #main .container article #sidebar {
 
     .heading {
       font-size: 18px;
-      padding-left: 40px;
-      padding-right: 40px;
       padding-top: 1em;
       padding-bottom: 1em;
+      margin-bottom: .5em;
 
       strong {
         color: $sherpa-brand-primary;
@@ -150,7 +149,7 @@ body #main .container article #sidebar {
 
     .header {
       background: $sherpa-secondary-color;
-      padding: 2em 0;
+      padding: 3em 0;
       width: 100%;
 
       h2 {
@@ -205,6 +204,16 @@ body #main .container article #sidebar {
     margin-bottom: 2em;
     @include dropshadow();
     padding-top: 0;
+
+    .grid {
+      padding: 10px 25px;
+      grid-gap: 4px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      font-size: 10px;
+    }
   }
 }
 

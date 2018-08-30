@@ -8,9 +8,6 @@
             }
             ?>
         </div>
-        <section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3369.2751584876796!2d-104.23985168482794!3d32.38498498109216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e3791d17083c67%3A0xc6bc1d4efff06c97!2sConstructors%2C+Inc.!5e0!3m2!1sen!2sus!4v1534792873987" width="100%" height="100%" frameborder="0" style="border:0; display: block;" allowfullscreen></iframe>
-        </section>
     <?php endif; ?>
     <?php if (!is_page('contact-us')) : ?>
         <section>

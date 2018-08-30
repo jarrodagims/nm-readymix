@@ -9,6 +9,13 @@
     @include raleway();
   }
 
+  @media screen and (min-width: $screen-md-min) {
+    h2 {
+      margin-bottom: 1em;
+      line-height: 1.5;
+    }
+  }
+
   @media screen and (max-width: $grid-float-breakpoint-max) {
     margin-top: 1.5em;
     padding-top: 0;

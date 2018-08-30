@@ -149,6 +149,10 @@
   background: rgba(0, 0, 0, 0.9);
 
   width: 100%;
+
+  @media screen and (min-width: $screen-md-min) {
+    padding: 10px 0;
+  }
 }
 
 .page-template-default, .blog, .error-404, .post-template-default {
@@ -158,7 +162,7 @@
      height: 130px;
      align-items: flex-end;
      display: flex;
-     padding-bottom: 30px;
+     padding-bottom: 10px;
    }
 
    .navbar-sherpa li.menu-item a {
@@ -167,6 +171,12 @@
 
    .navbar-sherpa li.menu-item .dropdown-menu li.menu-item a {
      color: $white; 
+   }
+
+   @media screen and (min-width: $screen-md-min) {
+     .top-header {
+       padding-top: 32px;
+     } 
    }
 }
 
@@ -465,6 +475,7 @@
       div {
         display: flex;
         justify-content: flex-end;
+        margin-right: 2em
       }
     }
 

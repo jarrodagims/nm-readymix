@@ -149,7 +149,7 @@
             <div class="row flex-row">
                 <div class="col-md-6 flex-col">
                     <div class="extra-padding"><img src="<?= IMGURL ?>construction.svg" alt="Construction Supplies" height="115"/>
-                    <h2>All The Construction Supplies You Need, <strong>DELIVERED TO THE JOB SITE</strong></h2>
+                    <h2>All The Construction Supplies <span>You Need, <strong>DELIVERED TO <span>THE JOB SITE</span></strong></span></h2>
                     <a href="<?= SITEURL ?>/contact-us/">
                         <button class="btn btn-primary">CONTACT US TODAY</button>
                     </a></div>

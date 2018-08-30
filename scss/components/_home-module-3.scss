@@ -51,6 +51,13 @@
     }
   }
 
+  @media screen and (min-width: $screen-md-min) {
+    .grid {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+  }
+
   @media screen and (min-width: $screen-sm-min) {
     .grid-2 {
       display: none;

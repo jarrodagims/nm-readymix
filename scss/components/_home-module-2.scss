@@ -43,7 +43,16 @@
 
   @media screen and (min-width: $screen-md-min) {
     ul {
-      padding-left: 0;
+      font-size: 21px;
+      padding: 0;
+      li {
+        margin-bottom: 1em;
+      }
+    }
+    padding-top: .75em;
+
+    h2 {
+      margin-top: 1em;
     }
   }
 

@@ -28,6 +28,7 @@
       position: absolute;
       left: -50vw;
       z-index: -1;
+      height: 100px;
     }
   }
 
@@ -95,6 +96,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @media screen and (min-width: $screen-md-min) {
+    .logo {
+      width: 100%;
+      height: 100px;
+      background: #F2F2F2;
+    }
+    .logo img {
+      margin-top: 44px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .location-map {
+      height: 180px;
+    }
+
+    .logo-row {
+      margin-bottom: 3em;
+
+      
+    }
+    p {
+        margin-bottom: 2em;
+      }
   }
   
 
