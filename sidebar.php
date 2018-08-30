@@ -25,22 +25,22 @@
                        <div class="h2">Concrete, Sand <br/>& Gravel Supplier</div>
                     </div>
                             <div class="grid">
-                                <a class="grid-2 column column-sand" href="<?= SITEURL ?>/contact-us/">
+                                <a class="grid-2 column column-sand" href="<?= SITEURL ?>/sand-and-gravel/">
                                     Sand
                                 </a>
-                                <a class="grid-2 column column-gravel" href="<?= SITEURL ?>/contact-us/">
+                                <a class="grid-2 column column-gravel" href="<?= SITEURL ?>/sand-and-gravel/">
                                     Gravel
                                 </a>
-                                <a class="grid-3 column column-concrete" href="<?= SITEURL ?>/contact-us/">
+                                <a class="grid-3 column column-concrete" href="<?= SITEURL ?>/ready-mixed-concrete/">
                                     Mixed Concrete
                                 </a>
                                 <a class="grid-3 column column-landscape" href="<?= SITEURL ?>/landscaping-supplies/">
                                     Landscape Rock
                                 </a>
-                                <a class="grid-3 column column-crushed" href="<?= SITEURL ?>/contact-us/">
+                                <a class="grid-3 column column-crushed" href="<?= SITEURL ?>/aggregate/">
                                     Crushed Aggregate
                                 </a>
-                                <a class="column column-cement" href="<?= SITEURL ?>/contact-us/">
+                                <a class="column column-cement" href="<?= SITEURL ?>/cement/">
                                     Cement
                                 </a>
                             </div>

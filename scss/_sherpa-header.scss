@@ -205,6 +205,36 @@
     }
   }
 
+  @media screen and (max-width: $grid-float-breakpoint-max) {
+
+    .top-header {
+      height: 100px;
+      padding-bottom: 0;
+
+      .row, .v-align, .container {
+        height: 100px;
+      }
+    }
+
+    .navbar-brand {
+      left: 50%;
+      transform: translateX(-50%);
+
+      .logo {
+        width: 100px;
+        height: 100px;
+        margin-top: 0;
+        margin-right: 0;
+      }
+    }
+
+    .navbar-sherpa .navbar-toggle {
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+    }
+  }
+
   @media screen and (min-width: $screen-md-min) {
     .navbar-sherpa {
       margin-left: 2em;

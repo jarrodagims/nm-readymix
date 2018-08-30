@@ -39,6 +39,7 @@ body #main .container article #sidebar {
       padding-top: 1em;
       padding-bottom: 1em;
       margin-bottom: .5em;
+      @include raleway();
 
       strong {
         color: $sherpa-brand-primary;

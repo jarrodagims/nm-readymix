@@ -61,7 +61,7 @@
                 src="<?= IMGURL; ?>logo.png"
                 alt="<?php echo get_bloginfo(
                     'description'
-                ); ?>" class="logo"/><img src="<?= IMGURL ?>logo.svg" alt="NM Ready Mix" />
+                ); ?>" class="logo"/>
                     </a><?php endif; ?>
                 <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
                 <ul class="nav navbar-nav navbar-right">
