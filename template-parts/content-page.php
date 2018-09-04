@@ -25,9 +25,14 @@
 
             echo "<article>\n";
             echo "<div class=\"sidebar-content\">";
+            if(get_field('custom_h1')) :
+                echo '<h1>'. get_field('custom_h1', $pageid) . '</h1>';
+            else :
+                echo $title;
+            endif;
             get_sidebar();
             echo "<div class=\"content page-content\">";
-            echo $title;
+
             the_content();
             ?>
             <div class="banner banner-bottom">

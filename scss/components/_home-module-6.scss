@@ -30,6 +30,12 @@
     text-align: left;
   }
 
+  p.blurb {
+    span {
+      color: $sherpa-brand-primary;
+    }
+  }
+
   .col-md-10 {
     margin: 0 auto;
   }
@@ -61,7 +67,7 @@
     }
   }
 
-  @media screen and (max-width: $grid-float-breakpoint-max) {
+  @media screen and (max-width: $screen-sm-max) {
     padding: 2em 0;
     text-align: center;
 

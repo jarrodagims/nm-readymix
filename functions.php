@@ -51,8 +51,6 @@
 		require_once($prefix . $include);
 	}
 
-	//Allow Advanced Custom Fields to be upgraded
-	define('ACF_EARLY_ACCESS', '5');
 
 
 /**
@@ -120,4 +118,6 @@ if ( function_exists( 'add_theme_support' ) ) {
     add_theme_support( 'yoast-seo-breadcrumbs' );
 }
 
+//Allow Advanced Custom Fields to be upgraded
+define('ACF_EARLY_ACCESS', '5');
 

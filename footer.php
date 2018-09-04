@@ -3,7 +3,7 @@
         <div class="row logo-row">
             <div class="col-xs-12">
                 <div class="logo">
-                    <img src="<?= IMGURL ?>logo.png" alt="NM Ready Mix" height="162" />
+                    <a href="<?= SITEURL ?>"><img src="<?= IMGURL ?>logo.png" alt="NM Ready Mix" height="162" /></a>
                 </div>
             </div>
         </div>
@@ -23,20 +23,20 @@
 
         <div class="row flex-row">
             <div class="col-md-6">
-                <div class="location-map map-roswell">
+                <a href="https://goo.gl/maps/Hnj2mVvaz8Q2" target="_blank"><div class="location-map map-roswell">
                     <img src="<?=IMGURL ?>map-pin.png" alt="Map Pin" />
                 </div>
                 <div class="location-bottom">ROSWELL READY MIX <div class="icons"><span class="icon-map"></span> <span class="icon-chevron"></span></div></div>
                 <p class="text-center">4100 S Lea Ave, Roswell, NM 88203<br />
-                    <strong>575.622.1186</strong></p>
+                    <strong>575.622.1186</strong></p></a>
             </div>
             <div class="col-md-6">
-                <div class="location-map map-lea">
+                <a href="https://goo.gl/maps/KWN3zvrVFSy" target="_blank"><div class="location-map map-lea">
                     <img src="<?=IMGURL ?>map-pin.png" alt="Map Pin" />
                 </div>
                 <div class="location-bottom">LEA COUNTY CONCRETE <div class="icons"><span class="icon-map"></span> <span class="icon-chevron"></span></div></div>
                 <p class="text-center">5505 W Dunnam St, Hobbs, NM 88240<br />
-                    <strong>575.392.1317</strong></p>
+                    <strong>575.392.1317</strong></p></a>
             </div>
         </div>
         <div class="row visible-xs text-center">

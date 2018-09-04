@@ -14,6 +14,10 @@
           $(this).toggleClass('expanded');
       });
 
+      $('.footer-nav .navbar-sherpa li.dropdown:hover .dropdown-menu').css({
+          position: 'absolute',
+          top: '-500px'
+      });
 
   });
 })(jQuery);

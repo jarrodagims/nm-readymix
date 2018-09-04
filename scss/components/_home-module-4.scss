@@ -1,30 +1,56 @@
 .home-module-4 {
-  background: url('../img/bg-second.png');
+  background: url('../img/bg-second.jpg');
   background-size: cover;
   color: $white;
-  padding: 174px 0;
+  position: relative;
   margin-top: 114px;
+  overflow: hidden;
+
+
 
   h2 {
     @include raleway();
   }
 
+  
+
   @media screen and (min-width: $screen-md-min) {
+
+    .bg-gray {
+    z-index: 0;
+
+    &:after {
+      background: rgba(0,0,0,0.5);
+      content: '';
+      height: 100%;
+      position: absolute;
+      width: 100vw;
+      left: -25vw;
+      top: 0;
+      margin: 0;
+      z-index: -1;
+    }
+  }
+
+    .col-md-6 {
+      padding: 174px 0;
+    }
+    
     h2 {
       margin-bottom: 1em;
       line-height: 1.5;
     }
   }
 
-  @media screen and (max-width: $grid-float-breakpoint-max) {
-    margin-top: 1.5em;
+  @media screen and (max-width: $screen-sm-max) {
+    margin: 1.5em 0;
     padding-top: 0;
     padding-bottom: 0;
     text-align: center;
     background: none;
     color: #606060;
     img {
-      margin-bottom: 1em;
+      margin: 0 auto 1em;
     }
 
     h2 {

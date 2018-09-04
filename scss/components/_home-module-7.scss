@@ -3,7 +3,7 @@
     font-family: 'Raleway', sans-serif;
     margin-bottom: 1em;
     font-size: 32px;
-    font-weight: 400;
+    font-weight: 300;
   }
 
   p {
@@ -11,7 +11,7 @@
 
     &.blurb {
       font-size: 21px; 
-      font-weight: 500;
+      font-weight: 400;
       margin-bottom: 1em;
     }
   }
@@ -21,7 +21,7 @@
     padding-bottom: 0;
   }
 
-  .bg-gray {
+  .bg-blue {
     background: #051A3F;
     color: $white;
 
@@ -32,6 +32,7 @@
     h2 {
       color: $white;
       font-family: 'Raleway', sans-serif;
+      margin-bottom: 1em;
     }
 
     .container-half {
@@ -151,12 +152,11 @@
     }
   }
 
-  @media screen and (max-width: $grid-float-breakpoint-max) {
+  @media screen and (max-width: $screen-sm-max) {
 
     .col-md-6 {
       width: 100%;
       padding: 0;
-      background: none;
     }
 
     p.blurb {
@@ -186,7 +186,7 @@
       font-size: 9px;
     }
 
-    .bg-gray {
+    .bg-blue {
       text-align: center;
       padding-bottom: 20px;
 

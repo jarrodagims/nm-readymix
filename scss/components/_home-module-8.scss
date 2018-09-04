@@ -1,6 +1,10 @@
 .home-module-8 {
   overflow: hidden;
 
+  a:hover {
+    text-decoration: none;
+  }
+
   .social-media-button {
     color: #606060;
 
@@ -40,6 +44,10 @@
     text-align: center;
   }
 
+  a:hover {
+    text-decoration: none;
+  }
+
   .location-map {
     text-align: center;
     background-position: center;
@@ -54,11 +62,12 @@
 
     &.map-lea {
       background-image: url('../img/lea-county-map.png');
-    }
+    } 
   }
 
   p.text-center {
     margin: 1em 0;
+    color: #606060;
   }
 
   .location-bottom {
@@ -67,6 +76,7 @@
     color: $white;
     padding: 16px 30px;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 
     .icon-chevron {
       @include svg-chevron(fff);
@@ -104,11 +114,12 @@
       height: 100px;
       background: #F2F2F2;
     }
-    .logo img {
+    .logo a {
       margin-top: 44px;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
+      z-index: 999;
     }
 
     .location-map {
